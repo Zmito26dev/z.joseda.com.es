@@ -1,8 +1,9 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import svg from './assets/svgs'
 import VctWidget from './components/vct-widget/vct-widget'
 import ONELauncherWidget from './components/ol-widget/ol-widget'
 import ModpkgWidget from './components/modpkg-widget/modpkg-widget'
+import RedsouthWidget from './components/redsouth-widget/redsouth-widget'
 // const apiKey = import.meta.env.VITE_CLIENT_ID;
 
 function App() {
@@ -50,9 +51,11 @@ function App() {
           </div>
           <div className="big-links">
             <h2>PERSONAL PROJECTS</h2>
+            <VctWidget />
+            <h2>REDSOUTH STUDIO</h2>
+            <RedsouthWidget />
             <ONELauncherWidget />
             <ModpkgWidget />
-            <VctWidget />
             <h2>SOCIAL MEDIA LINKS</h2>
             <WidthLink name="Twitch" url="https://twitch.tv/zmito26"/>
             <WidthLink name="Youtube" url="https://www.youtube.com/@zmito26_"/>
@@ -60,8 +63,8 @@ function App() {
             <WidthLink name="X" url="https://x.com/zmito26"/>
             {/* <WidthLink name="Tiktok" url="https://tiktok.com/@zmito26"/> */}
             <h2>CONTACT ME</h2>
-            <WidthCopyLink name="Personal email" url="mailto:zmito@zmito.eu" textToCopy="zmito@zmito.eu"/>
-            <WidthCopyLink name="Dev email" url="mailto:zmitodev@zmito.eu" textToCopy="zmitodev@zmito.eu"/>
+            <WidthCopyLink name="Personal email" url="mailto:joseda@joseda.com.es" textToCopy="joseda@joseda.com.es"/>
+            <WidthCopyLink name="Dev email" url="mailto:zmito@redsouth.eu" textToCopy="zmito@redsouth.eu"/>
           </div>
           <div className="footer">
             <div className="footer-links">
@@ -71,7 +74,7 @@ function App() {
               <IconLink icon={svg.x} url="https://x.com/zmito26"/>
               {/* <IconLink icon={svg.tiktok} url="https://tiktok.com/@zmito26"/> */}
             </div>
-            <a className="info" href="https://links.zmito.eu" target="_blank">
+            <a className="info" href="/" target="_blank">
               <p className="info-text">Created by </p>
               {svg.zlogo}
             </a>

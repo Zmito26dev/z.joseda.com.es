@@ -1,4 +1,4 @@
-.mp-widget {
+.rs-widget {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -19,7 +19,7 @@
   }
 }
 
-.mp-widget-link {
+.rs-widget-link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -28,11 +28,11 @@
   color: white;
 }
 
-.mp-widget:hover {
-  outline: 2px solid #FE5000;
+.rs-widget:hover {
+  outline: 2px solid #FF0000;
   outline-offset: 4px;
 }
 
-.mp-widget:hover img {
+.rs-widget:hover img {
   transform: scale(1.05);
 }
